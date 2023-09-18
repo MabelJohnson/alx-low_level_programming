@@ -4,22 +4,15 @@
  * @s: string
  * return: 0
  */
+
 void print_rev(char *s)
-
 {
-	int longi = 0;
-	int o;
+	int i;
+	int count = 0;
 
-	while (*s != '\0')
-	{
-		 longi++;
-		 s++;
-	}
-	s--;
-	for (o = longi; o > 0; o--)
-	{
-		_putchar(*s);
-		s--;
-	}
+	for (i = 0 ; s[i] != '\0' ; i++)
+		count++;
+	for (i = count - 1 ; i >= 0 ; i--)
+		putchar(s[i]);
 	_putchar('\n');
 }
