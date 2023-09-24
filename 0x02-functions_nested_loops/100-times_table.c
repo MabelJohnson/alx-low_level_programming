@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * times_table - prints the times table for n.
+ * print_times_table - prints the times table for n.
  * @n: The multiplication table requested.
  * Return: Nothing.
  */
-void times_table(int n)
+void print_times_table(int n)
 {
 	int i, j, res;
 
